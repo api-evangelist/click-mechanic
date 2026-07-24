@@ -1,7 +1,29 @@
 aid: click-mechanic
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/click-mechanic.png
 name: Click Mechanic
-description: Click Mechanic is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  ClickMechanic is the UK's leading online car-repair marketplace, founded in
+  2012, that connects car owners with vetted mobile mechanics and independent
+  garages for repairs, servicing, diagnostics, and MOTs. Customers enter their
+  registration and symptoms to get an instant fixed-price quote, then book a
+  vetted mechanic for same- or next-day work at home or the roadside, with
+  payment taken only after the job is completed. Surfaced as a portfolio company
+  of 500 Global. ClickMechanic operates a consumer- and mechanic-facing web
+  platform (Ruby on Rails on Heroku) and publishes no public developer API,
+  developer portal, SDK, or machine-readable API catalog at this time; this
+  profile captures its public identity and web properties for the API Evangelist
+  network.
 url: https://raw.githubusercontent.com/api-evangelist/click-mechanic/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Automotive
+- Car Repair
+- Marketplace
+- Mobile Mechanics
+- MOT
+- Servicing
+- United Kingdom
+- Booking Platform
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +52,27 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://clickmechanic.com
+  url: https://www.clickmechanic.com
+- type: Blog
+  url: https://www.clickmechanic.com/blog
+- type: HelpCenter
+  url: https://www.clickmechanic.com/help
+- type: Pricing
+  url: https://www.clickmechanic.com/bookings/car
+- type: Login
+  url: https://www.clickmechanic.com/sign-in
+- type: TermsOfService
+  url: https://www.clickmechanic.com/terms
+- type: PrivacyPolicy
+  url: https://www.clickmechanic.com/terms/privacy-notice
+- type: GitHubOrganization
+  url: https://github.com/ClickMechanic
+- type: DomainSecurity
+  url: security/click-mechanic-domain-security.yml
+- type: WellKnown
+  url: well-known/click-mechanic-well-known.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,31 @@
+generated: '2026-07-18'
+method: probed
+source: live HTTP probes of https://www.clickmechanic.com/.well-known/*
+host: www.clickmechanic.com
+note: >-
+  clickmechanic.com 301-redirects to www.clickmechanic.com; every well-known
+  path resolves to 404 on the canonical host. No WellKnown/SecurityTxt/APICatalog
+  surface is published. robots.txt is present (200) but declares no sitemap for
+  a developer surface. Recorded so re-runs skip re-probing.
+endpoints:
+- path: /.well-known/security.txt
+  status: 404
+  file: null
+- path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- path: /.well-known/api-catalog
+  status: 404
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 404
+  file: null
+- path: /llms.txt
+  status: 404
+  file: null
+- path: /robots.txt
+  status: 200
+  file: null
